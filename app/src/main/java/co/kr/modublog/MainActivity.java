@@ -1,7 +1,9 @@
 package co.kr.modublog;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -9,12 +11,15 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 import co.kr.modublog.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding bind;
+    RelativeLayout nav_login;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +43,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        bind.mainDrawer.addDrawerListener(new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+            }
+
+            @Override
+            public void onDrawerOpened(@NonNull View drawerView) {
+                nav_login = (RelativeLayout)findViewById(R.id.nav_login);
+                nav_login.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //bind.mainDrawer.closeDrawer(GravityCompat.END);
+                        Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+            }
+
+            @Override
+            public void onDrawerClosed(@NonNull View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+
+            }
+        });
+
+        /*
         bind.mainDrawer.setDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
@@ -60,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+*/
 
     }
     public boolean onOptionsItemSelected(MenuItem item) {//NavigationDrawer

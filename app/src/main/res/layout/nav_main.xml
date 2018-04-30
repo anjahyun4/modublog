@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_gravity="center"
+            android:id="@+id/nav_login"
             android:gravity="center"
             android:layout_margin="@dimen/interval10">
             <ImageView

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="cardview_color">#FFFFE4</color>
+    <color name="gray">#D5D5D5</color>
+    <color name="soft_gray">#EAEAEA</color>
+    <color name="dark_gray">#747474</color>
+    <color name="soft_pink">#FFD8D8</color>
+    <color name="pink">#FFA7A7</color>
+    <color name="soft_black">#99000000</color>
+    <color name="orange">#ff9800</color>
+    <color name="soft_orange">#fafafa</color>
+    <color name="soft_green">#47C83E</color>
+    <color name="sky_blue">#00D8FF</color>
+    <color name="good_pink">#FF7E7E</color>
+    <color name="black_20">#77000000</color>
+    <color name="soft_navy">#5c6bc0</color>
+    <color name="yellow">#ffee58</color>
+    <color name="blue">#2979ff</color>
+    <color name="green">#00c853</color>
+    <color name="main_color">#FCEBE8</color>
+    <color name="link_color">#676767</color>
+    <color name="spinner_color">#5D5F64</color>
+    <color name="moshare_color">#D97C74</color>
+    <color name="moshare_gray">#CCCCCC</color>
+    <color name="complete_white">#99FFFFFF</color>
+    <color name="complete_white11">#77FFFFFF</color>
+    <color name="complete_black">#99000000</color>
+    <color name="dfd">#DDD</color>
+</resources>

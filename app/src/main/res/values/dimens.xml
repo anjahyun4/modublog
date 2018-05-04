@@ -23,6 +23,7 @@
     <dimen name="interval30">30dp</dimen>
     <dimen name="interval35">35dp</dimen>
     <dimen name="interval40">40dp</dimen>
+    <dimen name="interval44">44dp</dimen>
     <dimen name="interval45">45dp</dimen>
     <dimen name="interval50">50dp</dimen>
     <dimen name="interval55">55dp</dimen>

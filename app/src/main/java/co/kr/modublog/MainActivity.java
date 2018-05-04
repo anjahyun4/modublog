@@ -18,7 +18,7 @@ import co.kr.modublog.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding bind;
-    RelativeLayout nav_login;
+    RelativeLayout nav_login, nav_notice;
 
 
     @Override
@@ -57,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         //bind.mainDrawer.closeDrawer(GravityCompat.END);
                         Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                        startActivity(intent);
+                    }
+                });
+                nav_notice = (RelativeLayout)findViewById(R.id.nav_notice);
+                nav_notice.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getApplicationContext(), NoticeActivity.class);
                         startActivity(intent);
                     }
                 });

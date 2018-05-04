@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/interval44"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="@dimen/interval45"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/back">
+                <ImageView
+                    android:layout_width="@dimen/interval15"
+                    android:layout_height="@dimen/interval15"
+                    android:layout_marginLeft="@dimen/interval15"
+                    android:src="@drawable/icon_back"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="회원가입"
+                android:textSize="@dimen/interval13"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/interval1"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/interval15"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="이름"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="이름을 입력해주세요."/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="닉네임을 입력해주세요."/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="이름을 입력해주세요."/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이메일"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="welcome@modublog.com"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="한/영·문자·숫자 포함 6자리 이상"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="연락처"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="이름을 입력해주세요."/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="우편번호"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="이름을 입력해주세요."/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="블로그 주소(선택)"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="이름을 입력해주세요."/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인스타그램 주소(선택)"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/interval11"
+                    android:padding="@dimen/interval15"
+                    android:background="@null"
+                    android:hint="이름을 입력해주세요."/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/interval15"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/interval45"
+                    android:background="@null"
+                    android:textSize="@dimen/interval12"
+                    android:padding="@dimen/interval10"
+                    android:id="@+id/id"
+                    android:hint="@string/login2"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/interval1"
+                    android:background="@color/gray" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/interval45"
+                    android:background="@null"
+                    android:textSize="@dimen/interval12"
+                    android:padding="@dimen/interval10"
+                    android:id="@+id/password"
+                    android:hint="비밀번호"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/interval10"
+                android:layout_marginTop="@dimen/interval20"
+                android:id="@+id/login"
+                android:background="@drawable/border"
+                android:text="로그인"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/interval11"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/interval20"
+            android:layout_marginBottom="@dimen/interval20"
+            android:text="비밀번호가 생각나지 않으세요?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/interval11"
+            android:gravity="center"
+            android:text="회원가입 시 등록하신 이메일 주소를 입력하시면"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/interval11"
+            android:layout_marginBottom="@dimen/interval5"
+            android:gravity="center"
+            android:text="아이디와 비밀번호 정보를 보내드립니다."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/interval11"
+            android:background="@drawable/border"
+            android:layout_margin="@dimen/interval15"
+            android:id="@+id/find"
+            android:text="아이디/비밀번호 찾기"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/interval11"
+            android:layout_marginLeft="@dimen/interval15"
+            android:layout_marginRight="@dimen/interval15"
+            android:layout_marginTop="@dimen/interval5"
+            android:background="@drawable/border"
+            android:id="@+id/register"
+            android:text="회원가입 완료"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/interval20"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/interval11"
+                android:text="회원가입에 문제가 있을 시 일반회원 고객센터로"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/interval11"
+                android:text="전화해주시면 친절히 안내해 드리겠습니다."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/interval11"
+                android:text="광고/제휴문의 고객센터 02-3144-2110"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/interval11"
+                android:text="일반회원 고객센터 02-6392-2121"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+</layout>

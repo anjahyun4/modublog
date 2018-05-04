@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:text="로그인"
+                android:text="아이디/비밀번호 찾기"
                 android:textSize="@dimen/interval13"
                 android:textColor="@color/black"/>
         </RelativeLayout>
@@ -54,8 +54,17 @@
                 android:textSize="@dimen/interval12"
                 android:textStyle="bold"
                 android:layout_marginTop="@dimen/interval5"
+                android:text="회원가입 시 입력한 이메일로"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="@dimen/interval12"
+                android:textStyle="bold"
                 android:layout_marginBottom="@dimen/interval30"
-                android:text="이메일과 비밀번호를 입력하세요"/>
+                android:text="아이디/비밀번호를 보내드립니다."/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -70,74 +79,19 @@
                     android:background="@null"
                     android:textSize="@dimen/interval12"
                     android:padding="@dimen/interval10"
-                    android:id="@+id/email"
+                    android:id="@+id/id"
                     android:hint="@string/login2"/>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/interval1"
-                    android:background="@color/gray" />
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/interval45"
-                    android:background="@null"
-                    android:textSize="@dimen/interval12"
-                    android:padding="@dimen/interval10"
-                    android:id="@+id/password"
-                    android:hint="비밀번호"/>
             </LinearLayout>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/interval10"
                 android:layout_marginTop="@dimen/interval20"
-                android:id="@+id/login"
+                android:id="@+id/find"
                 android:background="@drawable/border"
-                android:text="로그인"/>
+                android:text="아이디/비밀번호 찾기"/>
         </LinearLayout>
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/interval11"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/interval20"
-            android:layout_marginBottom="@dimen/interval20"
-            android:text="비밀번호가 생각나지 않으세요?"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/interval11"
-            android:gravity="center"
-            android:text="회원가입 시 등록하신 이메일 주소를 입력하시면"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/interval11"
-            android:layout_marginBottom="@dimen/interval5"
-            android:gravity="center"
-            android:text="아이디와 비밀번호 정보를 보내드립니다."/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/interval11"
-            android:background="@drawable/border"
-            android:layout_margin="@dimen/interval15"
-            android:id="@+id/find"
-            android:text="아이디/비밀번호 찾기"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/interval11"
-            android:layout_marginLeft="@dimen/interval15"
-            android:layout_marginRight="@dimen/interval15"
-            android:layout_marginTop="@dimen/interval5"
-            android:background="@drawable/border"
-            android:id="@+id/register"
-            android:text="회원가입"/>
 
 
         </LinearLayout>
